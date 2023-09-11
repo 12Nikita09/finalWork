@@ -23,80 +23,200 @@ p {
   min-width: 320px;
   margin: 0 auto;
 }
-.nav {
-  max-width: 1440px;
-  display: flex;
-  margin: 40px auto;
-  align-content: center;
-  justify-content: center;
-  column-gap: 215px;
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
-.nav a {
-  text-decoration: none;
-  color: #fff;
-  font-family: Gilroy-Bold;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.main {
+  margin: 130px 0 0 0;
 }
-.line {
-  border: 1px solid #828282;
-  margin: 30px auto;
-}
-.discription {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 75px;
-}
-.link {
-  display: flex;
-  -webkit-writing-mode: vertical-rl;
-  justify-content: flex-end;
-}
-.link a {
-  text-decoration: none;
-  color: var(--Black, #070707);
-  font-family: Gilroy-Bold;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.imgFace {
-  display: flex;
-  margin: 0 auto;
-  border-radius: 250px;
-}
-
-.nav a:hover {
-  color: #140a0a;
-}
-
 .title {
   display: flex;
   justify-content: center;
+  font-family: Gilroy-Medium;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
   margin-bottom: 25px;
 }
-.text a{
+.text a {
   display: flex;
   justify-content: center;
-  text-decoration: none;
-  color: var(--Black, #070707);
-  font-family: Gilroy-Bold;
-  font-size: 26px;
+  color: #fff;
+  font-family: Gilroy-Medium;
+  font-size: 45px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 20px;
-  color: #fff;
+  text-decoration: none;
 }
-.text a:hover{
-  color:#0f1ab4;
+.text a {
+  color: #ffffff;
+  background-image: linear-gradient(
+    to right,
+    #feffff,
+    #072d3b
+  ); /* Параметры градиента */
+  background-repeat: no-repeat; /* Фон не повторяется */
+  background-size: 0 100%; /* Градиент пока не показываем */
+  /* border: 1px solid #b7b7b7; Параметры рамки */
+  border-radius: 4px; /* Радиус скругления углов */
+  text-decoration: none; /* Убираем подчёркивание */
+  padding: 5px 15px; /* Расстояние от */
+  transition: 0.3s; /* Время перехода */
 }
-.imgProject {
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 30px;
+a:hover {
+  background-size: 100% 100%; /* Отображаем градиент */
 }
 
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #7a52b3;
+}
+
+.navbar__wrap {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hamb {
+  display: none;
+}
+
+.popup {
+  display: none;
+}
+
+.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.menu > li > a {
+  text-decoration: none;
+}
+
+.navbar__wrap .menu {
+  display: flex;
+}
+
+.navbar__wrap .menu > li {
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar__wrap .menu > li > a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 320px) {
+  .navbar__wrap .menu {
+    display: none;
+  }
+
+  .hamb {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .popup.open {
+    left: 0;
+  }
+
+  .popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+  }
+
+  .popup .menu > li {
+    width: 100%;
+  }
+
+  .popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f3f3f;
+  }
+
+  .popup .menu > li > a:hover {
+    background-color: rgba(122, 82, 179, 0.1);
+  }
+
+  .hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb__field.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  body.noscroll {
+    overflow: hidden;
+  }
+}

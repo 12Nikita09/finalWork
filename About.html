@@ -2,34 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinalWork</title>
-    <link rel="shortcut icon" href="img/favicon/DiHsp8nWKmVe7afMB1WFmhLzGizq4pRjeo-U8tuIRKMSOHBS2zj5FCD7BLRxrrS2K0e9i_W-.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style/about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinalWork</title>
+  <link rel="shortcut icon"
+    href="img/favicon/DiHsp8nWKmVe7afMB1WFmhLzGizq4pRjeo-U8tuIRKMSOHBS2zj5FCD7BLRxrrS2K0e9i_W-.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style/about.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="About.html">About me</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Contacts.html">Contacts</a>
-            <a href="Attractions.html">Attractions</a>
-        </nav>
-        <div class="line"></div>
-        <main class="main">
-            <h1 class="title">About me</h1>
-            <p class="text">
-                Hi, I'm Nikita – Frontend Developer from Roston-on-Don.
-                I'm interested in creating websites and everything connected with it.<br><br>
-            <p class="text">I'm studying at courses "Web Developer" at Synergy University.</p><br>
-            <p class="text">Ready to implement excellent
-                projects with wonderful people.</p>
-            </p>
-        </main>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <a href="#" class="logo" id="logo"><img src="img/face.jpeg" alt="" width="70px" height="70px"></a>
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Attractions.html">Attractions</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <main class="main">
+      <h1 class="title">About me</h1>
+      <div class="paragraph">
+        <p class="text">
+          Hi, I'm Nikita – Frontend Developer from Roston-on-Don.
+        <p class="text">I'm interested in creating websites and everything connected with it.</p>
+        <p class="text">I'm studying at courses "Web Developer" at Synergy University.</p>
+        <p class="text">Ready to implement excellent
+          projects with wonderful people.</p>
+        </p>
+      </div>
+    </main>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>

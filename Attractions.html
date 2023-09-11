@@ -13,15 +13,29 @@
 
 <body>
     <div class="wrapper">
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="About.html">About me</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Contacts.html">Contacts</a>
-            <a href="Attractions.html">Attractions</a>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <a href="#" class="logo" id="logo"><img src="img/face.jpeg" alt="" width="70px" height="70px"></a>
+                    <ul class="menu" id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About me</a></li>
+                        <li><a href="Skills.html">Skills</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Contacts.html">Contacts</a></li>
+                        <li><a href="Attractions.html">Attractions</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <div class="line"></div>
+        <div class="popup" id="popup"></div>
         <main class="main">
             <h1 class="title">Attractions of Rostov-on-Don</h1>
             <div class="slider">
@@ -109,7 +123,8 @@
                     <a class="previous" onclick="previousSlide()">&#10094;</a>
                     <div class="item_col">
                         <h2 class="subTitle">Театр драмы имени М. Горького</h2>
-                        <h3 class="text">Построенный в 1935 году театр драмы имени М. Горького во многом определил будущий
+                        <h3 class="text">Построенный в 1935 году театр драмы имени М. Горького во многом определил
+                            будущий
                             архитектурный облик площади. Этот шедевр конструктивизма принадлежит перу двух архитекторов:
                             В. Щуко и В. Гельфрейха. Современники и участники строительства позднее вспоминали, что при
                             открытии присутствовали архитекторы даже из Европы — настолько здание театра их восхитило и,
@@ -132,7 +147,8 @@
 
             </div>
         </main>
-        <script src="index.js"></script>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

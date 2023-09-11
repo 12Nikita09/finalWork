@@ -2,60 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinalWork</title>
-    <link rel="shortcut icon"
-        href="img/favicon/DiHsp8nWKmVe7afMB1WFmhLzGizq4pRjeo-U8tuIRKMSOHBS2zj5FCD7BLRxrrS2K0e9i_W-.jpg"
-        type="image/x-icon">
-    <link rel="stylesheet" href="style/skills.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinalWork</title>
+  <link rel="shortcut icon"
+    href="img/favicon/DiHsp8nWKmVe7afMB1WFmhLzGizq4pRjeo-U8tuIRKMSOHBS2zj5FCD7BLRxrrS2K0e9i_W-.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style/skills.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="About.html">About me</a>
-            <a href="Skills.html">Skills</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a href="Contacts.html">Contacts</a>
-            <a href="Attractions.html">Attractions</a>
-        </nav>
-        <div class="line"></div>
-        <main class="main">
-            <h1 class="title">Skills</h1>
-            <p class=" text">I work in such programs as</p>
-            <div class="gridGroup">
-                <div class="group1">
-                    <img src="img/svg/Frame.svg" alt="" class="frame">
-                    <h2 class="groupTitle">Figma</h2>
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star2.svg" alt="">
-                </div>
-                <div class="group2">
-                    <img src="img/svg/vscode.svg" alt="" class="frame">
-                    <h2 class="groupTitle">VS Code</h2>
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star2.svg" alt="">
-                </div>  
-                <div class="group4">
-                    <img src="img/github_git_icon_145985.png" alt="" class="frame">
-                    <h2 class="groupTitle">VS Code</h2>
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star.svg" alt="">
-                    <img src="img/svg/Star2.svg" alt="">
-                    <img src="img/svg/Star2.svg" alt="">
-                </div>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-    </div>
+          </div>
+          <a href="#" class="logo" id="logo"><img src="img/face.jpeg" alt="" width="70px" height="70px"></a>
+          <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About me</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Attractions.html">Attractions</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <main class="main">
+      <h1 class="title">Skills</h1>
+      <p class=" text">I work in such programs as</p>
+      <div class="gridGroup">
+        <div class="group1">
+          <img src="img/svg/Frame.svg" alt="" class="frame">
+          <h2 class="groupTitle">Figma</h2>
+          <div class="star">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star2.svg" alt="">
+          </div>
+        </div>
+        <div class="group2">
+          <img src="img/svg/vscode.svg" alt="" class="frame">
+          <h2 class="groupTitle">VS Code</h2>
+          <div class="star">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star2.svg" alt="">
+          </div>
+        </div>
+        <div class="group4">
+          <img src="img/github_git_icon_145985.png" alt="" class="frame">
+          <h2 class="groupTitle">VS Code</h2>
+          <div class="star">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star.svg" alt="">
+            <img src="img/svg/Star2.svg" alt="">
+            <img src="img/svg/Star2.svg" alt="">
+          </div>
+        </div>
+      </div>
     </main>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
