@@ -172,7 +172,10 @@
   border-radius: 15px;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width:768px){
+  .container{
+    max-width: 280px;
+  }
   .navbar__wrap .menu {
     display: none;
   }
@@ -258,11 +261,14 @@
   }
   .contactForm{
     margin: 0 auto;
-    /* max-width: 500px; */
     display: flex;
     flex-direction: column;
     border: 2px solid rgb(78, 5, 5);
     background: rgb(112, 150, 221);
     border-radius: 15px;
+  }
+  .contactItem{
+    max-width: 280px;
+    font-size: 19px;
   }
 }

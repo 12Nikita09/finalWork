@@ -28,7 +28,6 @@ p {
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;
-
 }
 
 .navbar {
@@ -95,9 +94,10 @@ p {
 .nav a:hover {
   color: #140a0a;
 }
-
+.main {
+  margin: 100px 0 0 0;
+}
 .title {
-  margin: 130px 0 0 0;
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -121,7 +121,7 @@ p {
   line-height: normal;
   row-gap: 15px;
 }
-.paragraph{
+.paragraph {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -129,8 +129,8 @@ p {
   row-gap: 15px;
 }
 
-@media (max-width: 320px) {
-  .container{
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
     max-width: 280px;
   }
   .navbar__wrap .menu {

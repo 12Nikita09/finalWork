@@ -94,7 +94,7 @@ p {
   border-radius: 50%;
 }
 .main {
-  margin: 130px auto;
+  margin: 100px 0 0 0;
 }
 .title {
   margin: 0 auto;
@@ -195,10 +195,9 @@ p {
     opacity: 1;
   }
 }
-@media (max-width: 320px) {
-  .container{
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
     max-width: 280px;
-    
   }
   .navbar__wrap .menu {
     display: none;
@@ -282,5 +281,21 @@ p {
 
   body.noscroll {
     overflow: hidden;
+  }
+  .slider {
+    margin: 20px;
+    padding: 50px 32px;
+    box-shadow: 4px 4px 5px 4px rgb(26, 25, 25);
+    transition: 0.5s;
+    background-color: rgb(66, 55, 55);
+    border-radius: 5px;
+  }
+  .title {
+    max-width: 280px;
+    font-size: 22px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }

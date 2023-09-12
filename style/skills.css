@@ -35,27 +35,15 @@ p {
 .nav a:hover {
   color: #140a0a;
 }
-.link {
-  display: flex;
-  -webkit-writing-mode: vertical-rl;
-  justify-content: flex-end;
-}
-.link a {
-  text-decoration: none;
-  color: #fff;
-  font-family: Gilroy-Bold;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 .imgFace {
   display: flex;
   margin: 0 auto;
   border-radius: 250px;
 }
+.main {
+  margin: 100px 0 0 0;
+}
 .title {
-  margin: 130px 0 0 0;
   display: flex;
   justify-content: center;
   color: var(--Black, #070707);
@@ -163,8 +151,8 @@ p {
   height: 70px;
   border-radius: 50%;
 }
-@media (max-width: 320px) {
-  .container{
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
     max-width: 280px;
   }
   .navbar__wrap .menu {
@@ -250,26 +238,27 @@ p {
   body.noscroll {
     overflow: hidden;
   }
-  .gridGroup{
+  .gridGroup {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    margin-bottom: 20px;
   }
-  .gridGroup img{
+  .gridGroup img {
     margin: 0 auto;
     justify-content: center;
   }
-  .group1{
+  .group1 {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
   }
-  .group2{
+  .group2 {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
   }
-  .star{
+  .star {
     display: flex;
     flex-direction: row;
   }
